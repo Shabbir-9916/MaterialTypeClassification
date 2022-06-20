@@ -27,8 +27,7 @@ test_transforms = transforms.Compose([transforms.Resize((224, 224)),
 to_pil = transforms.ToPILImage()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-# model=torch.load('material_nomet_model.pth')
-model=torch.load('ckps/resnet_material_fullmodel.pth')
+model=torch.load('resnet_material_fullmodel.pth')
 model.eval()
 
 
